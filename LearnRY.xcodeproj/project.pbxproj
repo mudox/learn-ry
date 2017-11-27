@@ -7,21 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FE9865BA5673467DA331D0A /* Pods_LearnRY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37660A775F410D36374DF6DC /* Pods_LearnRY.framework */; };
 		F47597231FB7A92B00AF38D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47597221FB7A92B00AF38D1 /* AppDelegate.swift */; };
-		F47597251FB7A92B00AF38D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47597241FB7A92B00AF38D1 /* ViewController.swift */; };
 		F47597281FB7A92B00AF38D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47597261FB7A92B00AF38D1 /* Main.storyboard */; };
 		F475972A1FB7A92B00AF38D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47597291FB7A92B00AF38D1 /* Assets.xcassets */; };
 		F475972D1FB7A92B00AF38D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F475972B1FB7A92B00AF38D1 /* LaunchScreen.storyboard */; };
+		F4D1A4A71FB8D36300796B34 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D1A4A61FB8D36300796B34 /* HomeViewController.swift */; };
+		F4E945301FB8F68100C007EA /* TopChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E9452F1FB8F68100C007EA /* TopChatListViewController.m */; };
+		F4E945331FB8F69700C007EA /* SecondaryChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E945321FB8F69700C007EA /* SecondaryChatListViewController.m */; };
+		F4EAEA811FCA1DF400984091 /* FakeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAEA801FCA1DF400984091 /* FakeChat.swift */; };
+		F4EAEA831FCB383B00984091 /* defaultThumbnail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4EAEA821FCB383B00984091 /* defaultThumbnail.jpg */; };
+		F4F9EC031FC8490C0064A337 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = F4F9EC021FC8490C0064A337 /* users.json */; };
+		F4F9EC051FC849500064A337 /* FakeUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9EC041FC849500064A337 /* FakeUsers.swift */; };
+		F4F9EC071FC8594E0064A337 /* RYTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9EC061FC8594E0064A337 /* RYTarget.swift */; };
+		F4F9EC0A1FC9A2BF0064A337 /* RYManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9EC091FC9A2BF0064A337 /* RYManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37660A775F410D36374DF6DC /* Pods_LearnRY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnRY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3772665937A2ACC46EB72D9 /* Pods-LearnRY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRY/Pods-LearnRY.debug.xcconfig"; sourceTree = "<group>"; };
+		D50348695B761F44FEB2748B /* Pods-LearnRY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRY.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRY/Pods-LearnRY.release.xcconfig"; sourceTree = "<group>"; };
 		F475971F1FB7A92B00AF38D1 /* LearnRY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47597221FB7A92B00AF38D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F47597241FB7A92B00AF38D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F47597271FB7A92B00AF38D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F47597291FB7A92B00AF38D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F475972C1FB7A92B00AF38D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F475972E1FB7A92B00AF38D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47597341FB7AA1B00AF38D1 /* LearnRY-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearnRY-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4D1A4A61FB8D36300796B34 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F4E9452E1FB8F68100C007EA /* TopChatListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopChatListViewController.h; sourceTree = "<group>"; };
+		F4E9452F1FB8F68100C007EA /* TopChatListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopChatListViewController.m; sourceTree = "<group>"; };
+		F4E945311FB8F69700C007EA /* SecondaryChatListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondaryChatListViewController.h; sourceTree = "<group>"; };
+		F4E945321FB8F69700C007EA /* SecondaryChatListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondaryChatListViewController.m; sourceTree = "<group>"; };
+		F4EAEA801FCA1DF400984091 /* FakeChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeChat.swift; sourceTree = "<group>"; };
+		F4EAEA821FCB383B00984091 /* defaultThumbnail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultThumbnail.jpg; sourceTree = "<group>"; };
+		F4F9EC021FC8490C0064A337 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		F4F9EC041FC849500064A337 /* FakeUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeUsers.swift; sourceTree = "<group>"; };
+		F4F9EC061FC8594E0064A337 /* RYTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RYTarget.swift; sourceTree = "<group>"; };
+		F4F9EC091FC9A2BF0064A337 /* RYManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RYManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +52,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE9865BA5673467DA331D0A /* Pods_LearnRY.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A6D6859E7098D869984D7A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3772665937A2ACC46EB72D9 /* Pods-LearnRY.debug.xcconfig */,
+				D50348695B761F44FEB2748B /* Pods-LearnRY.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC94498C20DB837124A48152 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37660A775F410D36374DF6DC /* Pods_LearnRY.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F47597161FB7A92B00AF38D1 = {
 			isa = PBXGroup;
 			children = (
 				F47597211FB7A92B00AF38D1 /* LearnRY */,
 				F47597201FB7A92B00AF38D1 /* Products */,
+				7A6D6859E7098D869984D7A2 /* Pods */,
+				DC94498C20DB837124A48152 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +97,49 @@
 		F47597211FB7A92B00AF38D1 /* LearnRY */ = {
 			isa = PBXGroup;
 			children = (
+				F4EAEA821FCB383B00984091 /* defaultThumbnail.jpg */,
+				F4EAEA7D1FCA1AA200984091 /* RongCloud */,
+				F4EAEA7E1FCA1D7100984091 /* ChatViewController */,
+				F4EAEA7F1FCA1D8C00984091 /* Resources */,
+				F4F9EC041FC849500064A337 /* FakeUsers.swift */,
+				F4EAEA801FCA1DF400984091 /* FakeChat.swift */,
+				F4D1A4A61FB8D36300796B34 /* HomeViewController.swift */,
 				F47597221FB7A92B00AF38D1 /* AppDelegate.swift */,
-				F47597241FB7A92B00AF38D1 /* ViewController.swift */,
 				F47597261FB7A92B00AF38D1 /* Main.storyboard */,
 				F47597291FB7A92B00AF38D1 /* Assets.xcassets */,
 				F475972B1FB7A92B00AF38D1 /* LaunchScreen.storyboard */,
 				F475972E1FB7A92B00AF38D1 /* Info.plist */,
+				F47597341FB7AA1B00AF38D1 /* LearnRY-Bridging-Header.h */,
 			);
 			path = LearnRY;
+			sourceTree = "<group>";
+		};
+		F4EAEA7D1FCA1AA200984091 /* RongCloud */ = {
+			isa = PBXGroup;
+			children = (
+				F4F9EC091FC9A2BF0064A337 /* RYManager.swift */,
+				F4F9EC061FC8594E0064A337 /* RYTarget.swift */,
+			);
+			path = RongCloud;
+			sourceTree = "<group>";
+		};
+		F4EAEA7E1FCA1D7100984091 /* ChatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4E9452E1FB8F68100C007EA /* TopChatListViewController.h */,
+				F4E9452F1FB8F68100C007EA /* TopChatListViewController.m */,
+				F4E945311FB8F69700C007EA /* SecondaryChatListViewController.h */,
+				F4E945321FB8F69700C007EA /* SecondaryChatListViewController.m */,
+			);
+			path = ChatViewController;
+			sourceTree = "<group>";
+		};
+		F4EAEA7F1FCA1D8C00984091 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4F9EC021FC8490C0064A337 /* users.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F47597311FB7A92B00AF38D1 /* Build configuration list for PBXNativeTarget "LearnRY" */;
 			buildPhases = (
+				732ABDC08F7639EB585599EC /* [CP] Check Pods Manifest.lock */,
 				F475971B1FB7A92B00AF38D1 /* Sources */,
 				F475971C1FB7A92B00AF38D1 /* Frameworks */,
 				F475971D1FB7A92B00AF38D1 /* Resources */,
+				87BC8182670F32C8A5F84899 /* [CP] Embed Pods Frameworks */,
+				7928C03E8EBCE70038BB3320 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +177,7 @@
 				TargetAttributes = {
 					F475971E1FB7A92B00AF38D1 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,21 +205,118 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F9EC031FC8490C0064A337 /* users.json in Resources */,
 				F475972D1FB7A92B00AF38D1 /* LaunchScreen.storyboard in Resources */,
 				F475972A1FB7A92B00AF38D1 /* Assets.xcassets in Resources */,
 				F47597281FB7A92B00AF38D1 /* Main.storyboard in Resources */,
+				F4EAEA831FCB383B00984091 /* defaultThumbnail.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		732ABDC08F7639EB585599EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnRY-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7928C03E8EBCE70038BB3320 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LearnRY/Pods-LearnRY-resources.sh",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnRY/Pods-LearnRY-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87BC8182670F32C8A5F84899 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LearnRY/Pods-LearnRY-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
+				"${BUILT_PRODUCTS_DIR}/JacKit/JacKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/RandomKit/RandomKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RandomUser/RandomUser.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ShiftOperations/ShiftOperations.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Threadly/Threadly.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSKit/iOSKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JacKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RandomKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RandomUser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ShiftOperations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Threadly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnRY/Pods-LearnRY-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F475971B1FB7A92B00AF38D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F47597251FB7A92B00AF38D1 /* ViewController.swift in Sources */,
+				F4F9EC0A1FC9A2BF0064A337 /* RYManager.swift in Sources */,
+				F4EAEA811FCA1DF400984091 /* FakeChat.swift in Sources */,
+				F4F9EC071FC8594E0064A337 /* RYTarget.swift in Sources */,
+				F4E945301FB8F68100C007EA /* TopChatListViewController.m in Sources */,
+				F4F9EC051FC849500064A337 /* FakeUsers.swift in Sources */,
 				F47597231FB7A92B00AF38D1 /* AppDelegate.swift in Sources */,
+				F4E945331FB8F69700C007EA /* SecondaryChatListViewController.m in Sources */,
+				F4D1A4A71FB8D36300796B34 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +451,18 @@
 		};
 		F47597321FB7A92B00AF38D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3772665937A2ACC46EB72D9 /* Pods-LearnRY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSQ5ZCLFSD;
 				INFOPLIST_FILE = LearnRY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.mudox.LearnRY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LearnRY/LearnRY-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +470,17 @@
 		};
 		F47597331FB7A92B00AF38D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50348695B761F44FEB2748B /* Pods-LearnRY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSQ5ZCLFSD;
 				INFOPLIST_FILE = LearnRY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.mudox.LearnRY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LearnRY/LearnRY-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

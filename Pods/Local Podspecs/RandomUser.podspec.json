@@ -1,0 +1,28 @@
+{
+  "name": "RandomUser",
+  "version": "0.1.0",
+  "summary": "Random fake user information generator",
+  "description": "A Swift wrapper over the API provided from randomuser.me, which generate\nrandom user information covering almost all commonly used fields.",
+  "homepage": "https://github.com/mudox/random-user",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": "Mudox",
+  "source": {
+    "git": "https://github.com/mudox/random-user.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "RandomUser/Source/**/*.swift",
+  "resource_bundles": {
+    "Assets": "RandomUser/Asset/*"
+  },
+  "dependencies": {
+    "Moya/RxSwift": [
+
+    ]
+  }
+}

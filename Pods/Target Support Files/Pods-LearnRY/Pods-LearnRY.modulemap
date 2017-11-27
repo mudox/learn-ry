@@ -1,0 +1,6 @@
+framework module Pods_LearnRY {
+  umbrella header "Pods-LearnRY-umbrella.h"
+
+  export *
+  module * { export * }
+}
