@@ -80,9 +80,11 @@ class HomeViewController: FormViewController
       }
       return
     }
+    
+    RCIM.shared().currentUserInfo = FakeUsers.currentUser
 
     jack.debug("connect to server")
-    RYManager.shared.currentUserToken
+    RYManager.shared.getCurrentUserToken
       .asObservable()
       .flatMapLatest { token in
         return RYManager.shared.connectToServer(with: token)

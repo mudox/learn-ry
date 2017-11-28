@@ -43,9 +43,14 @@ class RYManager: NSObject {
     let sdk = RCIM.shared()!
     sdk.initWithAppKey(appKey)
     sdk.userInfoDataSource = shared
+//    sdk.groupInfoDataSource = shared
+    sdk.enableTypingStatus = true
+//    sdk.enableMessageRecall = true
+//    sdk.enableMessageMentioned = true
+    sdk.enablePersistentUserInfoCache = true
   }
 
-  var currentUserToken: Single<String> {
+  var getCurrentUserToken: Single<String> {
     return Single<String>.create { single -> Disposable in
 
       if let token = RYManager.userToken {
