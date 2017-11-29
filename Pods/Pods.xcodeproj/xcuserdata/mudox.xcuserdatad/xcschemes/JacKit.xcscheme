@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1E5FFED2953921D9B9DF64F6BD511E9B'
+               BlueprintIdentifier = 'E2B54655238854A6B99DB9A3FC725318'
                BlueprintName = 'JacKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'JacKit.framework'>

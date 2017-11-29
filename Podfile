@@ -11,11 +11,13 @@ target 'LearnRY' do
   pod 'JacKit', :path => '/Users/mudox/Develop/Apple/Frameworks/JacKit/'
   pod 'iOSKit', :path => '/Users/mudox/Develop/Apple/Frameworks/iOSKit/'
   pod 'iOSKit/SwiftyJSON', :path => '/Users/mudox/Develop/Apple/Frameworks/iOSKit/'
+  pod 'iOSKit/MBProgressHUD-Swift', :path => '/Users/mudox/Develop/Apple/Frameworks/iOSKit/'
   pod 'RandomUser', :path => '/Users/mudox/Develop/Apple/Frameworks/RandomUser/'
 
-  pod 'Eureka'
-  pod 'Moya'
   pod 'CryptoSwift'
+  pod 'Eureka'
   pod 'Fakery'
+  pod 'Kingfisher'
+  pod 'Moya'
   pod 'RandomKit'
 end
