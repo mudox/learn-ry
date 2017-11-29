@@ -20,7 +20,7 @@ struct FakeUser {
   // nature name
   let firstName: String
   let lastName: String
-  var fullName: String { return "\(firstName.capitalized) \(lastName.capitalized)" }
+  var fullName: String { return "\(firstName) \(lastName)" }
 
   // login info
   let id: String
@@ -55,8 +55,8 @@ extension FakeUser {
 
     return json.dictionaryValue.mapValues { userJSON in
       return FakeUser(
-        firstName: userJSON["name", "first"].stringValue,
-        lastName: userJSON["name", "first"].stringValue,
+        firstName: userJSON["name", "first"].stringValue.capitalized,
+        lastName: userJSON["name", "last"].stringValue.capitalized,
 
         id: userJSON["login", "username"].stringValue,
         password: userJSON["login", "password"].stringValue,
@@ -64,9 +64,9 @@ extension FakeUser {
         gender: Gender(rawValue: userJSON["gender"].stringValue)!,
         birthday: userJSON["dob"].stringValue,
 
-        state: userJSON["location", "state"].stringValue,
-        city: userJSON["location", "city"].stringValue,
-        street: userJSON["location", "street"].stringValue,
+        state: userJSON["location", "state"].stringValue.capitalized,
+        city: userJSON["location", "city"].stringValue.capitalized,
+        street: userJSON["location", "street"].stringValue.capitalized,
         countryCode: userJSON["nat"].stringValue,
 
         phone: userJSON["phone"].stringValue,
@@ -83,13 +83,13 @@ extension FakeUser {
   /// must have non-nil value after app finished launching
   static var current: FakeUser! {
     get {
-      guard let userName = The.userDefaults.string(forKey: The.UserDefaultsKey.currentUserName) else {
+      guard let userID = The.userDefaults.string(forKey: The.UserDefaultsKey.currentUserID) else {
         return nil
       }
-      return FakeUser.all[userName]!
+      return FakeUser.all[userID]!
     }
     set {
-      The.userDefaults.set(newValue?.id, forKey: The.UserDefaultsKey.currentUserName)
+      The.userDefaults.set(newValue?.id, forKey: The.UserDefaultsKey.currentUserID)
     }
   }
 
