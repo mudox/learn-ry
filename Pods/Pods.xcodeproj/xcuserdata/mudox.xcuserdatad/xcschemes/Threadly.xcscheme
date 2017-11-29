@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7792206D90E12AE4F305B66EC7AD6593'
+               BlueprintIdentifier = '507C46828C2ADA4DB17058A1FC064076'
                BlueprintName = 'Threadly'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Threadly.framework'>

@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'LearnRY' do
   use_frameworks!
@@ -20,4 +20,6 @@ target 'LearnRY' do
   pod 'Kingfisher'
   pod 'Moya'
   pod 'RandomKit'
+  pod 'FlagKit', '~> 2.0.1'
+
 end
