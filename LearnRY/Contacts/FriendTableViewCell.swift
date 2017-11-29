@@ -17,7 +17,8 @@ class FriendTableViewCell: UITableViewCell {
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    // Initialization code
+    avatarView.layer.cornerRadius = 4
+    avatarView.layer.masksToBounds = true
   }
 
   override func prepareForReuse() {
