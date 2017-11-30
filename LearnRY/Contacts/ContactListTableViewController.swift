@@ -97,22 +97,15 @@ class ContactListTableViewController: UITableViewController {
     tableView.deselectRow(at: indexPath, animated: true)
     let cellModel = model(forRowAt: indexPath)
     switch cellModel {
-      
+
     case let model as FriendCellModel:
       let vc = StoryboardScene.Contacts.contactInfoViewController.instantiate()
       vc.contact = model.user
-      
+      show(vc, sender: self)
+
     default:
       assertionFailure()
     }
   }
-
-//  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//    assert(segue.identifier == "showContactInfo", "only support `showContactInfo`")
-//    let destVC = segue.destination as! ContactInfoViewController
-//    let indexPath = tableView.indexPathForSelectedRow!
-//    let contact = tableViewModel[indexPath.section].cellModels[indexPath.row]
-//    destVC.contact = contact
-//  }
 
 }

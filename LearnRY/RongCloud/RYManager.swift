@@ -103,10 +103,10 @@ class RYManager: NSObject {
     sdk.initWithAppKey(appKey)
     sdk.userInfoDataSource = shared
 //    sdk.groupInfoDataSource = shared
-    sdk.enableTypingStatus = true
+//    sdk.enableTypingStatus = true
 //    sdk.enableMessageRecall = true
 //    sdk.enableMessageMentioned = true
-    sdk.enablePersistentUserInfoCache = true
+//    sdk.enablePersistentUserInfoCache = true
   }
 
 
@@ -134,7 +134,12 @@ class RYManager: NSObject {
 extension RYManager: RCIMUserInfoDataSource {
 
   func getUserInfo(withUserId userId: String!, completion: ((RCUserInfo?) -> Void)!) {
-    completion(FakeUser.all[userId]?.rcUserInfo)
+    if let user = FakeUser.all[userId] {
+      completion(user.rcUserInfo)
+    } else {
+      jack.warn("no user info for user ID: \(userId)")
+      completion(nil)
+    }
   }
 
 }

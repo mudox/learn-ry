@@ -8,17 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		7FE9865BA5673467DA331D0A /* Pods_LearnRY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37660A775F410D36374DF6DC /* Pods_LearnRY.framework */; };
+		F44DA3F71FCF94F400B4A8F4 /* TopChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44DA3F61FCF94F400B4A8F4 /* TopChatListViewController.m */; };
+		F44DA3FA1FCF952900B4A8F4 /* SecondaryChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44DA3F81FCF952800B4A8F4 /* SecondaryChatListViewController.m */; };
+		F458BA7E1FCCF70C0082AC55 /* ContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458BA7D1FCCF70C0082AC55 /* ContactListTableViewController.swift */; };
+		F458BA801FCCF73E0082AC55 /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458BA7F1FCCF73E0082AC55 /* ContactInfoViewController.swift */; };
+		F458BA821FCCF7FC0082AC55 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458BA811FCCF7FC0082AC55 /* LoginViewController.swift */; };
+		F458BA841FCD1BDC0082AC55 /* The.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458BA831FCD1BDC0082AC55 /* The.swift */; };
+		F458BA861FCDD7000082AC55 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458BA851FCDD7000082AC55 /* FriendTableViewCell.swift */; };
+		F458BA891FCDF1BC0082AC55 /* LoginUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458BA871FCDF1BC0082AC55 /* LoginUserTableViewCell.swift */; };
+		F458BA8A1FCDF1BC0082AC55 /* LoginUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F458BA881FCDF1BC0082AC55 /* LoginUserTableViewCell.xib */; };
+		F458BA8D1FCDF37B0082AC55 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F458BA8C1FCDF37B0082AC55 /* Login.storyboard */; };
+		F458BA951FCE059A0082AC55 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458BA931FCE059A0082AC55 /* Storyboards.swift */; };
+		F458BA961FCE059A0082AC55 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458BA941FCE059A0082AC55 /* Assets.swift */; };
+		F458BA981FCE5C1A0082AC55 /* RootChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458BA971FCE5C1A0082AC55 /* RootChatListViewController.swift */; };
+		F458BA9A1FCE5E560082AC55 /* GroupedChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458BA991FCE5E560082AC55 /* GroupedChatListViewController.swift */; };
+		F458BA9C1FCF1D020082AC55 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F458BA9B1FCF1D020082AC55 /* Contacts.storyboard */; };
+		F458BA9E1FCF1D570082AC55 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F458BA9D1FCF1D570082AC55 /* Chat.storyboard */; };
+		F458BAA01FCF309B0082AC55 /* CurrentUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458BA9F1FCF309B0082AC55 /* CurrentUserViewController.swift */; };
+		F458BAA31FCF33F70082AC55 /* AvatarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F458BAA21FCF33F60082AC55 /* AvatarView.xib */; };
+		F458BAA51FCF341E0082AC55 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458BAA41FCF341E0082AC55 /* AvatarView.swift */; };
 		F47597231FB7A92B00AF38D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47597221FB7A92B00AF38D1 /* AppDelegate.swift */; };
 		F47597281FB7A92B00AF38D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47597261FB7A92B00AF38D1 /* Main.storyboard */; };
 		F475972A1FB7A92B00AF38D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47597291FB7A92B00AF38D1 /* Assets.xcassets */; };
 		F475972D1FB7A92B00AF38D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F475972B1FB7A92B00AF38D1 /* LaunchScreen.storyboard */; };
-		F4D1A4A71FB8D36300796B34 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D1A4A61FB8D36300796B34 /* HomeViewController.swift */; };
-		F4E945301FB8F68100C007EA /* TopChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E9452F1FB8F68100C007EA /* TopChatListViewController.m */; };
-		F4E945331FB8F69700C007EA /* SecondaryChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E945321FB8F69700C007EA /* SecondaryChatListViewController.m */; };
-		F4EAEA811FCA1DF400984091 /* FakeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAEA801FCA1DF400984091 /* FakeChat.swift */; };
-		F4EAEA831FCB383B00984091 /* defaultThumbnail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4EAEA821FCB383B00984091 /* defaultThumbnail.jpg */; };
+		F47E72C71FCF8AF300F9FADD /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47E72C61FCF8AF300F9FADD /* ChatViewController.swift */; };
 		F4F9EC031FC8490C0064A337 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = F4F9EC021FC8490C0064A337 /* users.json */; };
-		F4F9EC051FC849500064A337 /* FakeUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9EC041FC849500064A337 /* FakeUsers.swift */; };
+		F4F9EC051FC849500064A337 /* FakeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9EC041FC849500064A337 /* FakeUser.swift */; };
 		F4F9EC071FC8594E0064A337 /* RYTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9EC061FC8594E0064A337 /* RYTarget.swift */; };
 		F4F9EC0A1FC9A2BF0064A337 /* RYManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9EC091FC9A2BF0064A337 /* RYManager.swift */; };
 /* End PBXBuildFile section */
@@ -27,22 +42,37 @@
 		37660A775F410D36374DF6DC /* Pods_LearnRY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnRY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3772665937A2ACC46EB72D9 /* Pods-LearnRY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRY/Pods-LearnRY.debug.xcconfig"; sourceTree = "<group>"; };
 		D50348695B761F44FEB2748B /* Pods-LearnRY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRY.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRY/Pods-LearnRY.release.xcconfig"; sourceTree = "<group>"; };
+		F44DA3F21FCF911D00B4A8F4 /* LearnRY-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearnRY-Bridging-Header.h"; sourceTree = "<group>"; };
+		F44DA3F51FCF94F400B4A8F4 /* TopChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopChatListViewController.h; sourceTree = "<group>"; };
+		F44DA3F61FCF94F400B4A8F4 /* TopChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChatListViewController.m; sourceTree = "<group>"; };
+		F44DA3F81FCF952800B4A8F4 /* SecondaryChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondaryChatListViewController.m; sourceTree = "<group>"; };
+		F44DA3F91FCF952900B4A8F4 /* SecondaryChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondaryChatListViewController.h; sourceTree = "<group>"; };
+		F458BA7D1FCCF70C0082AC55 /* ContactListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewController.swift; sourceTree = "<group>"; };
+		F458BA7F1FCCF73E0082AC55 /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
+		F458BA811FCCF7FC0082AC55 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F458BA831FCD1BDC0082AC55 /* The.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The.swift; sourceTree = "<group>"; };
+		F458BA851FCDD7000082AC55 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		F458BA871FCDF1BC0082AC55 /* LoginUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserTableViewCell.swift; sourceTree = "<group>"; };
+		F458BA881FCDF1BC0082AC55 /* LoginUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginUserTableViewCell.xib; sourceTree = "<group>"; };
+		F458BA8C1FCDF37B0082AC55 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F458BA931FCE059A0082AC55 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		F458BA941FCE059A0082AC55 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		F458BA971FCE5C1A0082AC55 /* RootChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootChatListViewController.swift; sourceTree = "<group>"; };
+		F458BA991FCE5E560082AC55 /* GroupedChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedChatListViewController.swift; sourceTree = "<group>"; };
+		F458BA9B1FCF1D020082AC55 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
+		F458BA9D1FCF1D570082AC55 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		F458BA9F1FCF309B0082AC55 /* CurrentUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserViewController.swift; sourceTree = "<group>"; };
+		F458BAA21FCF33F60082AC55 /* AvatarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvatarView.xib; sourceTree = "<group>"; };
+		F458BAA41FCF341E0082AC55 /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		F475971F1FB7A92B00AF38D1 /* LearnRY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47597221FB7A92B00AF38D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47597271FB7A92B00AF38D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F47597291FB7A92B00AF38D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F475972C1FB7A92B00AF38D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F475972E1FB7A92B00AF38D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F47597341FB7AA1B00AF38D1 /* LearnRY-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearnRY-Bridging-Header.h"; sourceTree = "<group>"; };
-		F4D1A4A61FB8D36300796B34 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		F4E9452E1FB8F68100C007EA /* TopChatListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopChatListViewController.h; sourceTree = "<group>"; };
-		F4E9452F1FB8F68100C007EA /* TopChatListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopChatListViewController.m; sourceTree = "<group>"; };
-		F4E945311FB8F69700C007EA /* SecondaryChatListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondaryChatListViewController.h; sourceTree = "<group>"; };
-		F4E945321FB8F69700C007EA /* SecondaryChatListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondaryChatListViewController.m; sourceTree = "<group>"; };
-		F4EAEA801FCA1DF400984091 /* FakeChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeChat.swift; sourceTree = "<group>"; };
-		F4EAEA821FCB383B00984091 /* defaultThumbnail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultThumbnail.jpg; sourceTree = "<group>"; };
+		F47E72C61FCF8AF300F9FADD /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		F4F9EC021FC8490C0064A337 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
-		F4F9EC041FC849500064A337 /* FakeUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeUsers.swift; sourceTree = "<group>"; };
+		F4F9EC041FC849500064A337 /* FakeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeUser.swift; sourceTree = "<group>"; };
 		F4F9EC061FC8594E0064A337 /* RYTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RYTarget.swift; sourceTree = "<group>"; };
 		F4F9EC091FC9A2BF0064A337 /* RYManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RYManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +106,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F458BA7A1FCCF6700082AC55 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				F458BA9B1FCF1D020082AC55 /* Contacts.storyboard */,
+				F458BA851FCDD7000082AC55 /* FriendTableViewCell.swift */,
+				F458BA7D1FCCF70C0082AC55 /* ContactListTableViewController.swift */,
+				F458BA7F1FCCF73E0082AC55 /* ContactInfoViewController.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		F458BA8B1FCDF1C40082AC55 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F458BA8C1FCDF37B0082AC55 /* Login.storyboard */,
+				F458BA811FCCF7FC0082AC55 /* LoginViewController.swift */,
+				F458BA871FCDF1BC0082AC55 /* LoginUserTableViewCell.swift */,
+				F458BA881FCDF1BC0082AC55 /* LoginUserTableViewCell.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F458BA8E1FCE049A0082AC55 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				F458BA941FCE059A0082AC55 /* Assets.swift */,
+				F458BA931FCE059A0082AC55 /* Storyboards.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		F458BAA11FCF33D60082AC55 /* CurrentUser */ = {
+			isa = PBXGroup;
+			children = (
+				F458BAA41FCF341E0082AC55 /* AvatarView.swift */,
+				F458BAA21FCF33F60082AC55 /* AvatarView.xib */,
+				F458BA9F1FCF309B0082AC55 /* CurrentUserViewController.swift */,
+			);
+			path = CurrentUser;
+			sourceTree = "<group>";
+		};
 		F47597161FB7A92B00AF38D1 = {
 			isa = PBXGroup;
 			children = (
@@ -97,19 +168,21 @@
 		F47597211FB7A92B00AF38D1 /* LearnRY */ = {
 			isa = PBXGroup;
 			children = (
-				F4EAEA821FCB383B00984091 /* defaultThumbnail.jpg */,
-				F4EAEA7D1FCA1AA200984091 /* RongCloud */,
-				F4EAEA7E1FCA1D7100984091 /* ChatViewController */,
-				F4EAEA7F1FCA1D8C00984091 /* Resources */,
-				F4F9EC041FC849500064A337 /* FakeUsers.swift */,
-				F4EAEA801FCA1DF400984091 /* FakeChat.swift */,
-				F4D1A4A61FB8D36300796B34 /* HomeViewController.swift */,
+				F458BAA11FCF33D60082AC55 /* CurrentUser */,
 				F47597221FB7A92B00AF38D1 /* AppDelegate.swift */,
+				F4F9EC041FC849500064A337 /* FakeUser.swift */,
+				F458BA831FCD1BDC0082AC55 /* The.swift */,
+				F475972B1FB7A92B00AF38D1 /* LaunchScreen.storyboard */,
 				F47597261FB7A92B00AF38D1 /* Main.storyboard */,
 				F47597291FB7A92B00AF38D1 /* Assets.xcassets */,
-				F475972B1FB7A92B00AF38D1 /* LaunchScreen.storyboard */,
+				F458BA8B1FCDF1C40082AC55 /* Login */,
+				F4EAEA7E1FCA1D7100984091 /* Chat */,
+				F458BA7A1FCCF6700082AC55 /* Contacts */,
+				F4EAEA7F1FCA1D8C00984091 /* Resources */,
+				F4EAEA7D1FCA1AA200984091 /* RongCloud */,
+				F458BA8E1FCE049A0082AC55 /* SwiftGen */,
 				F475972E1FB7A92B00AF38D1 /* Info.plist */,
-				F47597341FB7AA1B00AF38D1 /* LearnRY-Bridging-Header.h */,
+				F44DA3F21FCF911D00B4A8F4 /* LearnRY-Bridging-Header.h */,
 			);
 			path = LearnRY;
 			sourceTree = "<group>";
@@ -123,15 +196,19 @@
 			path = RongCloud;
 			sourceTree = "<group>";
 		};
-		F4EAEA7E1FCA1D7100984091 /* ChatViewController */ = {
+		F4EAEA7E1FCA1D7100984091 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				F4E9452E1FB8F68100C007EA /* TopChatListViewController.h */,
-				F4E9452F1FB8F68100C007EA /* TopChatListViewController.m */,
-				F4E945311FB8F69700C007EA /* SecondaryChatListViewController.h */,
-				F4E945321FB8F69700C007EA /* SecondaryChatListViewController.m */,
+				F44DA3F91FCF952900B4A8F4 /* SecondaryChatListViewController.h */,
+				F44DA3F81FCF952800B4A8F4 /* SecondaryChatListViewController.m */,
+				F47E72C61FCF8AF300F9FADD /* ChatViewController.swift */,
+				F458BA9D1FCF1D570082AC55 /* Chat.storyboard */,
+				F44DA3F51FCF94F400B4A8F4 /* TopChatListViewController.h */,
+				F44DA3F61FCF94F400B4A8F4 /* TopChatListViewController.m */,
+				F458BA971FCE5C1A0082AC55 /* RootChatListViewController.swift */,
+				F458BA991FCE5E560082AC55 /* GroupedChatListViewController.swift */,
 			);
-			path = ChatViewController;
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		F4EAEA7F1FCA1D8C00984091 /* Resources */ = {
@@ -205,11 +282,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F458BAA31FCF33F70082AC55 /* AvatarView.xib in Resources */,
 				F4F9EC031FC8490C0064A337 /* users.json in Resources */,
+				F458BA8A1FCDF1BC0082AC55 /* LoginUserTableViewCell.xib in Resources */,
+				F458BA8D1FCDF37B0082AC55 /* Login.storyboard in Resources */,
 				F475972D1FB7A92B00AF38D1 /* LaunchScreen.storyboard in Resources */,
 				F475972A1FB7A92B00AF38D1 /* Assets.xcassets in Resources */,
+				F458BA9C1FCF1D020082AC55 /* Contacts.storyboard in Resources */,
+				F458BA9E1FCF1D570082AC55 /* Chat.storyboard in Resources */,
 				F47597281FB7A92B00AF38D1 /* Main.storyboard in Resources */,
-				F4EAEA831FCB383B00984091 /* defaultThumbnail.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +349,10 @@
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
+				"${BUILT_PRODUCTS_DIR}/FlagKit/FlagKit.framework",
 				"${BUILT_PRODUCTS_DIR}/JacKit/JacKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/RandomKit/RandomKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RandomUser/RandomUser.framework",
@@ -286,7 +370,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlagKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JacKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RandomKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RandomUser.framework",
@@ -309,14 +396,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44DA3F71FCF94F400B4A8F4 /* TopChatListViewController.m in Sources */,
+				F458BA7E1FCCF70C0082AC55 /* ContactListTableViewController.swift in Sources */,
 				F4F9EC0A1FC9A2BF0064A337 /* RYManager.swift in Sources */,
-				F4EAEA811FCA1DF400984091 /* FakeChat.swift in Sources */,
+				F458BA801FCCF73E0082AC55 /* ContactInfoViewController.swift in Sources */,
 				F4F9EC071FC8594E0064A337 /* RYTarget.swift in Sources */,
-				F4E945301FB8F68100C007EA /* TopChatListViewController.m in Sources */,
-				F4F9EC051FC849500064A337 /* FakeUsers.swift in Sources */,
+				F458BA861FCDD7000082AC55 /* FriendTableViewCell.swift in Sources */,
+				F458BA981FCE5C1A0082AC55 /* RootChatListViewController.swift in Sources */,
+				F458BAA01FCF309B0082AC55 /* CurrentUserViewController.swift in Sources */,
+				F458BAA51FCF341E0082AC55 /* AvatarView.swift in Sources */,
+				F458BA9A1FCE5E560082AC55 /* GroupedChatListViewController.swift in Sources */,
+				F458BA891FCDF1BC0082AC55 /* LoginUserTableViewCell.swift in Sources */,
+				F47E72C71FCF8AF300F9FADD /* ChatViewController.swift in Sources */,
+				F4F9EC051FC849500064A337 /* FakeUser.swift in Sources */,
+				F458BA961FCE059A0082AC55 /* Assets.swift in Sources */,
 				F47597231FB7A92B00AF38D1 /* AppDelegate.swift in Sources */,
-				F4E945331FB8F69700C007EA /* SecondaryChatListViewController.m in Sources */,
-				F4D1A4A71FB8D36300796B34 /* HomeViewController.swift in Sources */,
+				F458BA951FCE059A0082AC55 /* Storyboards.swift in Sources */,
+				F44DA3FA1FCF952900B4A8F4 /* SecondaryChatListViewController.m in Sources */,
+				F458BA841FCD1BDC0082AC55 /* The.swift in Sources */,
+				F458BA821FCCF7FC0082AC55 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +562,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "LearnRY/LearnRY-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -482,7 +580,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LearnRY/LearnRY-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

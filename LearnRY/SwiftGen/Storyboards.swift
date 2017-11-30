@@ -54,44 +54,40 @@ extension UIViewController {
 
 // swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 enum StoryboardScene {
+  enum Chat: StoryboardType {
+    static let storyboardName = "Chat"
+
+    static let rootChatListViewController = SceneType<LearnRY.RootChatListViewController>(storyboard: Chat.self, identifier: "rootChatListViewController")
+  }
+  enum Contacts: StoryboardType {
+    static let storyboardName = "Contacts"
+
+    static let contactInfoViewController = SceneType<LearnRY.ContactInfoViewController>(storyboard: Contacts.self, identifier: "contactInfoViewController")
+
+    static let contactListViewController = SceneType<LearnRY.ContactListTableViewController>(storyboard: Contacts.self, identifier: "contactListViewController")
+  }
   enum LaunchScreen: StoryboardType {
     static let storyboardName = "LaunchScreen"
 
-    static let initialScene = InitialSceneType<UIViewController>(storyboard: LaunchScreen.self)
+    static let launchScreenViewController = SceneType<UIViewController>(storyboard: LaunchScreen.self, identifier: "launchScreenViewController")
   }
   enum Login: StoryboardType {
     static let storyboardName = "Login"
-
-    static let initialScene = InitialSceneType<LearnRY.LoginViewController>(storyboard: Login.self)
 
     static let loginViewController = SceneType<LearnRY.LoginViewController>(storyboard: Login.self, identifier: "loginViewController")
   }
   enum Main: StoryboardType {
     static let storyboardName = "Main"
 
-    static let initialScene = InitialSceneType<UITabBarController>(storyboard: Main.self)
-
-    static let chatViewController = SceneType<RCConversationViewController>(storyboard: Main.self, identifier: "chatViewController")
-
-    static let contactInfoViewController = SceneType<LearnRY.ContactInfoViewController>(storyboard: Main.self, identifier: "contactInfoViewController")
-
-    static let contactListViewController = SceneType<UITableViewController>(storyboard: Main.self, identifier: "contactListViewController")
-
-    static let contactNavigationController = SceneType<UINavigationController>(storyboard: Main.self, identifier: "contactNavigationController")
-
-    static let groupedChatListViewController = SceneType<LearnRY.GroupedChatListViewController>(storyboard: Main.self, identifier: "groupedChatListViewController")
-
-    static let rootChatListViewController = SceneType<LearnRY.RootChatListViewController>(storyboard: Main.self, identifier: "rootChatListViewController")
+    static let currentUserViewController = SceneType<LearnRY.CurrentUserViewController>(storyboard: Main.self, identifier: "currentUserViewController")
 
     static let rootTabBarController = SceneType<UITabBarController>(storyboard: Main.self, identifier: "rootTabBarController")
   }
 }
 
 enum StoryboardSegue {
-  enum Main: String, SegueType {
-    case showChat
+  enum Contacts: String, SegueType {
     case showContactInfo
-    case showGroupedChatList
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name

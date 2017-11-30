@@ -15,7 +15,6 @@ class RootChatListViewController: RCConversationListViewController {
 
   override func awakeFromNib() {
     super.awakeFromNib()
-
     configure()
   }
 
@@ -34,9 +33,7 @@ class RootChatListViewController: RCConversationListViewController {
       RCConversationType.ConversationType_GROUP.rawValue,
       RCConversationType.ConversationType_DISCUSSION.rawValue,
     ])
-    
-    emptyConversationView = UIView()
-    showConnectingStatusOnNavigatorBar = true
+  
   }
   
   override func viewDidLoad() {
@@ -54,6 +51,8 @@ class RootChatListViewController: RCConversationListViewController {
     switch conversationModelType {
       
     case .CONVERSATION_MODEL_TYPE_NORMAL:
+      tabBarController?.tabBar.isHidden = true
+      
       let vc = RCConversationViewController()
       vc.conversationType = model.conversationType
       vc.targetId = model.targetId

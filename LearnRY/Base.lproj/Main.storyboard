@@ -69,14 +69,14 @@
         <!--User-->
         <scene sceneID="JAP-Ja-JFf">
             <objects>
-                <viewController id="lxR-JU-BCr" customClass="FormViewController" customModule="Eureka" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="currentUserViewController" id="lxR-JU-BCr" customClass="CurrentUserViewController" customModule="LearnRY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s6V-98-pgB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Rgi-eT-qXq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="User" image="me" selectedImage="meSelected" id="yZw-xw-l1S"/>
+                    <tabBarItem key="tabBarItem" title="User" image="userTabIcon" selectedImage="userSelectedTabIcon" id="yZw-xw-l1S"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epq-yh-Gzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,7 +101,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="me" width="26" height="26"/>
-        <image name="meSelected" width="26" height="26"/>
+        <image name="userSelectedTabIcon" width="26" height="26"/>
+        <image name="userTabIcon" width="26" height="26"/>
     </resources>
 </document>

@@ -54,7 +54,7 @@ class LoginViewController: UIViewController {
   @IBAction func loginButtonTapped(_ sender: UIButton) {
     resignKeyboard()
 
-    guard let userName = userNameField.text else {
+    guard let userID = userNameField.text else {
       view.mbp.blink(title: "Need user name")
       userNameField.becomeFirstResponder()
       return
@@ -67,17 +67,13 @@ class LoginViewController: UIViewController {
     }
 
     // simulate server logic
-
-    guard
-      let user = FakeUser.all[userName],
-      user.password == password
-      else {
+    guard let user = FakeUser.all[userID], user.password == password else {
         view.mbp.blink(title: "Invalid user name or password")
         return
     }
     
     FakeUser.current = user
-    The.mainWindow.rootViewController = StoryboardScene.Main.initialScene.instantiate()
+    The.appDelegate.login()
   }
 
 }
