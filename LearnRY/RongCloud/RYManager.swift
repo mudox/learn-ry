@@ -23,18 +23,19 @@ enum RYManagerError: Error {
 
 class RYManager: NSObject {
 
-  // MARK: - Constants
+  // MARK: Constants
   static let appKey = "82hegw5u8dz5x"
   static let appSecret = "2OWrRo0pGe5"
 
-  // MARK: - Singleton
+  // MARK: Singleton
   static let shared = RYManager()
   private override init() { }
 
-  // MARK: - User Token
+  // MARK: User Token
   static var cachedCurrentUserToken: String? {
     get {
-      guard let dict = The.userDefaults.dictionary(forKey: "userTokens") else {
+      let key = The.UserDefaultsKey.cachedUserTokens
+      guard let cachedTokens = The.userDefaults.dictionary(forKey: key) else {
         return nil
       }
 
@@ -42,29 +43,31 @@ class RYManager: NSObject {
         return nil
       }
 
-      return dict[id] as? String
+      return cachedTokens[id] as? String
     }
   }
 
-  static func cacheToken(_ token: String, forUserName name: String) {
-    if var tokens = The.userDefaults.dictionary(forKey: The.UserDefaultsKey.cachedUserTokens) {
-      tokens[name] = token
-      The.userDefaults.set(tokens, forKey: The.UserDefaultsKey.cachedUserTokens)
+  static func cacheToken(_ token: String, forUserID id: String) {
+    let key = The.UserDefaultsKey.cachedUserTokens
+    if var cachedTokens = The.userDefaults.dictionary(forKey: key) {
+      cachedTokens[id] = token
+      The.userDefaults.set(cachedTokens, forKey: key)
     } else {
-      The.userDefaults.set([name: token], forKey: The.UserDefaultsKey.cachedUserTokens)
+      The.userDefaults.set([id: token], forKey: key)
     }
+    The.userDefaults.synchronize()
   }
 
-  var getCurrentUserToken: Single<String> {
+  static func getCurrentUserToken() -> Single<String> {
     return Single<String>.create { single -> Disposable in
 
       if let token = RYManager.cachedCurrentUserToken {
-        single(.success(token))
         jack.debug("use cached token")
+        single(.success(token))
         return Disposables.create()
       }
 
-      jack.debug("request token from server")
+      jack.debug("no token cacheed for \(FakeUser.current.fullName), request from server")
 
       let id = FakeUser.current.id
       let name = FakeUser.current.fullName
@@ -76,7 +79,7 @@ class RYManager: NSObject {
           do {
             let json = JSON(response.data)
             let token: String = try json.take(from: "token")
-            RYManager.cacheToken(token, forUserName: name)
+            RYManager.cacheToken(token, forUserID: id)
             single(.success(token))
           } catch {
             single(.error(error))
@@ -93,6 +96,7 @@ class RYManager: NSObject {
     } // Single.create
   }
 
+  // MARK: - SDK
 
   static func initSDK() {
     let sdk = RCIM.shared()!
@@ -106,18 +110,18 @@ class RYManager: NSObject {
   }
 
 
-  func connectToServer(with token: String) -> Completable {
-    return Completable.create { emit in
+  static func connect(with token: String) -> Completable {
+    return Completable.create { completable in
       RCIM.shared().connect(
         withToken: token,
         success: { userID in
-          emit(.completed)
+          completable(.completed)
         },
         error: { errorCode in
-          emit(.error(RYManagerError.connection(code: errorCode)))
+          completable(.error(RYManagerError.connection(code: errorCode)))
         },
         tokenIncorrect: {
-          emit(.error(RYManagerError.invalidToken))
+          completable(.error(RYManagerError.invalidToken))
         })
 
       return Disposables.create()
