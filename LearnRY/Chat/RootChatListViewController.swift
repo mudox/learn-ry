@@ -19,24 +19,35 @@ class RootChatListViewController: RCConversationListViewController {
     configure()
   }
 
-//  override func viewDidLoad() {
-//    super.viewDidLoad()
-//
-//    // Do any additional setup after loading the view.
-//  }
-
   func configure() {
+    
+    navigationItem.title = "LearnRY"
+
     setDisplayConversationTypes([
-      RCConversationType.ConversationType_PRIVATE,
-      RCConversationType.ConversationType_GROUP,
-      RCConversationType.ConversationType_DISCUSSION,
-      RCConversationType.ConversationType_SYSTEM,
+      RCConversationType.ConversationType_PRIVATE.rawValue,
+      RCConversationType.ConversationType_GROUP.rawValue,
+      RCConversationType.ConversationType_DISCUSSION.rawValue,
+      RCConversationType.ConversationType_SYSTEM.rawValue,
     ])
 
     setCollectionConversationType([
-      RCConversationType.ConversationType_GROUP,
-      RCConversationType.ConversationType_DISCUSSION,
+      RCConversationType.ConversationType_GROUP.rawValue,
+      RCConversationType.ConversationType_DISCUSSION.rawValue,
     ])
+    
+    emptyConversationView = UIView()
+    showConnectingStatusOnNavigatorBar = true
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    conversationListTableView.separatorStyle = .none
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+      
+    tabBarController!.tabBar.isHidden = false
   }
 
   override func onSelectedTableRow(_ conversationModelType: RCConversationModelType, conversationModel model: RCConversationModel!, at indexPath: IndexPath!) {

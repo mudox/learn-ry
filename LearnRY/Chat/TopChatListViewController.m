@@ -22,6 +22,19 @@
     return nil;
   }
 
+  [self configure];
+
+  return self;
+}
+
+- (void)awakeFromNib {
+  [super awakeFromNib];
+  [self configure];
+}
+
+
+- (void)configure
+{
   [self setDisplayConversationTypes:@[
      @(ConversationType_PRIVATE),
      @(ConversationType_DISCUSSION),
@@ -35,9 +48,8 @@
      @(ConversationType_DISCUSSION),
      @(ConversationType_GROUP)
    ]];
-
-  return self;
 }
+
 
 - (void)onSelectedTableRow: (RCConversationModelType)conversationModelType
          conversationModel: (RCConversationModel *)model
@@ -47,7 +59,7 @@
   {
   case RC_CONVERSATION_MODEL_TYPE_COLLECTION:
   {
-    SecondaryChatListViewController *vc = [[SecondaryChatListViewController alloc] initWithConversationType: model.conversationType];
+    SecondaryChatListViewController *vc = [[SecondaryChatListViewController alloc] initWithConversationType:model.conversationType];
     vc.navigationItem.title = model.conversationTitle;
     [self showViewController:vc sender:self];
   }
@@ -70,6 +82,7 @@
 }
 
 @end
+
 
 
 
