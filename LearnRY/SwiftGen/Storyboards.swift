@@ -68,8 +68,6 @@ enum StoryboardScene {
   }
   enum LaunchScreen: StoryboardType {
     static let storyboardName = "LaunchScreen"
-
-    static let launchScreenViewController = SceneType<UIViewController>(storyboard: LaunchScreen.self, identifier: "launchScreenViewController")
   }
   enum Login: StoryboardType {
     static let storyboardName = "Login"
@@ -80,6 +78,8 @@ enum StoryboardScene {
     static let storyboardName = "Main"
 
     static let currentUserViewController = SceneType<LearnRY.CurrentUserViewController>(storyboard: Main.self, identifier: "currentUserViewController")
+
+    static let launchScreenViewController = SceneType<LearnRY.LaunchScreenViewController>(storyboard: Main.self, identifier: "launchScreenViewController")
 
     static let rootTabBarController = SceneType<UITabBarController>(storyboard: Main.self, identifier: "rootTabBarController")
   }

@@ -103,10 +103,10 @@ class RYManager: NSObject {
     sdk.initWithAppKey(appKey)
     sdk.userInfoDataSource = shared
 //    sdk.groupInfoDataSource = shared
-//    sdk.enableTypingStatus = true
+    sdk.enableTypingStatus = true
 //    sdk.enableMessageRecall = true
 //    sdk.enableMessageMentioned = true
-//    sdk.enablePersistentUserInfoCache = true
+    sdk.enablePersistentUserInfoCache = true
   }
 
 

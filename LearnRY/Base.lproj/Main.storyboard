@@ -99,8 +99,37 @@
             </objects>
             <point key="canvasLocation" x="-828" y="80"/>
         </scene>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="RnE-P0-wLx">
+            <objects>
+                <viewController storyboardIdentifier="launchScreenViewController" id="xY6-Rr-IWd" customClass="LaunchScreenViewController" customModule="LearnRY" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fNM-yZ-1u1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="8M2-u7-PoI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8M2-u7-PoI" firstAttribute="top" secondItem="fNM-yZ-1u1" secondAttribute="top" id="Qc1-Uu-Bih"/>
+                            <constraint firstItem="8M2-u7-PoI" firstAttribute="leading" secondItem="fNM-yZ-1u1" secondAttribute="leading" id="g6m-an-6Ik"/>
+                            <constraint firstAttribute="bottom" secondItem="8M2-u7-PoI" secondAttribute="bottom" id="mvf-vP-dIj"/>
+                            <constraint firstItem="8M2-u7-PoI" firstAttribute="trailing" secondItem="fNM-yZ-1u1" secondAttribute="trailing" id="rff-MS-deY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="duo-oy-YzI"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8M-pe-y4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1607" y="-712"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="loginBackground" width="375" height="812"/>
         <image name="userSelectedTabIcon" width="26" height="26"/>
         <image name="userTabIcon" width="26" height="26"/>
     </resources>

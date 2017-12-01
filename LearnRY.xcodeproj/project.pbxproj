@@ -32,6 +32,7 @@
 		F475972A1FB7A92B00AF38D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47597291FB7A92B00AF38D1 /* Assets.xcassets */; };
 		F475972D1FB7A92B00AF38D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F475972B1FB7A92B00AF38D1 /* LaunchScreen.storyboard */; };
 		F47E72C71FCF8AF300F9FADD /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47E72C61FCF8AF300F9FADD /* ChatViewController.swift */; };
+		F49B65B91FD09F5C003CDE84 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49B65B81FD09F5C003CDE84 /* LaunchScreenViewController.swift */; };
 		F4F9EC031FC8490C0064A337 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = F4F9EC021FC8490C0064A337 /* users.json */; };
 		F4F9EC051FC849500064A337 /* FakeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9EC041FC849500064A337 /* FakeUser.swift */; };
 		F4F9EC071FC8594E0064A337 /* RYTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F9EC061FC8594E0064A337 /* RYTarget.swift */; };
@@ -71,6 +72,7 @@
 		F475972C1FB7A92B00AF38D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F475972E1FB7A92B00AF38D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47E72C61FCF8AF300F9FADD /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		F49B65B81FD09F5C003CDE84 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		F4F9EC021FC8490C0064A337 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		F4F9EC041FC849500064A337 /* FakeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeUser.swift; sourceTree = "<group>"; };
 		F4F9EC061FC8594E0064A337 /* RYTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RYTarget.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		F47597211FB7A92B00AF38D1 /* LearnRY */ = {
 			isa = PBXGroup;
 			children = (
+				F49B65B81FD09F5C003CDE84 /* LaunchScreenViewController.swift */,
 				F458BAA11FCF33D60082AC55 /* CurrentUser */,
 				F47597221FB7A92B00AF38D1 /* AppDelegate.swift */,
 				F4F9EC041FC849500064A337 /* FakeUser.swift */,
@@ -256,6 +259,11 @@
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -414,6 +422,7 @@
 				F458BA951FCE059A0082AC55 /* Storyboards.swift in Sources */,
 				F44DA3FA1FCF952900B4A8F4 /* SecondaryChatListViewController.m in Sources */,
 				F458BA841FCD1BDC0082AC55 /* The.swift in Sources */,
+				F49B65B91FD09F5C003CDE84 /* LaunchScreenViewController.swift in Sources */,
 				F458BA821FCCF7FC0082AC55 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,6 +565,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSQ5ZCLFSD;
 				INFOPLIST_FILE = LearnRY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.mudox.LearnRY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -575,6 +585,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSQ5ZCLFSD;
 				INFOPLIST_FILE = LearnRY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.mudox.LearnRY;
 				PRODUCT_NAME = "$(TARGET_NAME)";

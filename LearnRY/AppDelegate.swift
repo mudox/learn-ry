@@ -38,16 +38,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.makeKeyAndVisible()
     return true
   }
-  
-  
+
+
   /// Get current user token, if not.
   /// Then connect to RongCloud server.
   /// Transition to chat interface if everything goes fine.
   func login() {
-    window!.rootViewController = StoryboardScene.LaunchScreen.launchScreenViewController.instantiate()
-    
+    window!.rootViewController = StoryboardScene.Main.launchScreenViewController.instantiate()
+
     // get current token, if noy, and then connect to RongCloud server
-    RYManager.getCurrentUserToken()
+    RYManager
+      .getCurrentUserToken()
       .asObservable()
       .flatMapLatest { token in
         return RYManager.connect(with: token)
@@ -58,13 +59,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           DispatchQueue.main.async { [weak self] in
             self?.window?.rootViewController = StoryboardScene.Main.rootTabBarController.instantiate()
           }
-      },
+        },
         onError: { error in
           jack.error("enter chat list failed with:\n\(error)")
-      })
+        }
+      )
       .disposed(by: disposeBag)
   }
-  
+
   /// Remove current user info, show login interface.
   func logout() {
     FakeUser.current = nil
